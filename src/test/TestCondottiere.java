@@ -137,4 +137,5 @@ public class TestCondottiere {
         condottiere.percevoirRessourcesSpecifiques();
         Test.test(condottiere.getJoueur().getTresor() == 3, "test du nombre de pièces d'or après perception de ressources spécifiques avec 1 quartier militaire");
     }
+
 }

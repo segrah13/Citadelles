@@ -28,6 +28,10 @@ public class Condottiere extends Personnage {
         Joueur joueur = getPlateau().getJoueur(choix);
         choix = choisisQuartier(joueur);
         Quartier quartier = joueur.getCite().get(choix);
+        getJoueur().retirerPieces(quartier.getCoutConstruction() - 1);
+        joueur.retirerQuartierDansCite(quartier.getNom());
+        System.out.println( "   => On retire le quartier '\"" + quartier.getNom() + "\" a " + joueur.getNom());
+        System.out.println("Pour information, votre trésor est constitué de "+ getJoueur().getTresor() + " pièces d’or");
     }
     private void imprimerJoueurs() {
         for (int i = 0; i < getPlateau().getNbJoueurs(); i++) {

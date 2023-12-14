@@ -114,4 +114,8 @@ public class Caracteristiques {
             "Si la Reine est à côté du joueur qui a choisi la carte " +
                     "du personnage de rang 4 (gemme jaune), elle reçoit 3 " +
                     "pièces d'or.";
+
+
+
+
 }
